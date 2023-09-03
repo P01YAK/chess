@@ -88,3 +88,24 @@ document.addEventListener('DOMContentLoaded', () => {
 		userColor = userColor === 'w' ? 'b' : 'w'
 	})
 })
+
+document.addEventListener('DOMContentLoaded', function () {
+	const body = document.body
+	const container = document.querySelector('.container')
+	const buttons = document.querySelectorAll('.buttons button')
+
+	// Функция для смены темы
+	function toggleTheme() {
+		body.classList.toggle('light-theme')
+		body.classList.toggle('dark-theme')
+		container.classList.toggle('light-theme')
+		container.classList.toggle('dark-theme')
+		move-history.classList.toggle('light-theme')
+		move-history.classList.toggle('dark-theme')
+		buttons.forEach(button => button.classList.toggle('light-theme'))
+	}
+
+	// Добавьте обработчик события для кнопки смены темы
+	const themeButton = document.querySelector('.toggle-theme-button')
+	themeButton.addEventListener('click', toggleTheme)
+})

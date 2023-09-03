@@ -9,18 +9,20 @@
 	<title>P01YAK chess</title>
 </head>
 
-<body>
+<body class='light-theme'>
 
-	<div class="container">
-		<h1>P01YAK Шахматы емае</h1>
+	<div class="container light-theme">
+		<h1>P01YAK Chess</h1>
 		<div class="board" id='board'></div>
 		<div class="buttons">
-			<button class="play-again">Играть снова</button>
-			<button class="set-pos">Расставить</button>
-			<button class="flip-board">Перевернуть</button>
+			<button class="play-again light-theme">Играть снова</button>
+			<button class="set-pos light-theme">Расставить</button>
+			<button class="flip-board light-theme">Перевернуть</button>
+			<button class="toggle-theme-button change-theme">Тема</button>
 		</div>
-		<div id="move-history" class='move-history'></div>
+		<div id="move-history" class='move-history light-theme'></div>
 	</div>
+
 
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js'></script>
 	<script src='js/chessboard-1.0.0.min.js'></script>

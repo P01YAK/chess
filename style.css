@@ -37,6 +37,7 @@ h1 {
 .board {
 	max-width: 100%;
 	margin: 20px auto;
+	width: 500px;
 }
 
 .buttons {
@@ -63,13 +64,48 @@ button:hover {
 }
 
 .move-history {
-	max-width: 100%;
+	max-width: 510px;
 	margin-top: 20px;
 	border: 1px solid #ccc;
 	padding: 10px;
 	border-radius: 5px;
 	height: 100px;
-	width: 400px;
-	overflow-y: scroll;
+	/* width: 400px; */
+	overflow-y: auto;
 	background-color: #f2f2f2;
+}
+
+.light-theme {
+	background-color: #fff;
+	color: #000;
+	transition: all 0.6s ease;
+}
+
+.light-theme button {
+	background-color: #000;
+	color: #fff;
+	transition: all 0.6s ease;
+}
+
+/* Стили для темной темы */
+.dark-theme {
+	background-color: #222126;
+	color: #858585;
+	border-color: #c73f3f;
+	transition: all 0.6s ease;
+}
+
+.dark-theme button {
+	background-color: #2a2a2a;
+	color: #858585;
+	border-color: #3a463d;
+	transition: all 0.6s ease;
+}
+
+.dark-theme .move-history {
+	background-color: #2a2a2a;
+	border-color: #373737;
+	color: #858585;
+	overflow-y: auto;
+	transition: all 0.6s ease;
 }
